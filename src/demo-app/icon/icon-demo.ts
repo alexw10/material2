@@ -14,8 +14,13 @@ export class IconDemo {
     mdIconRegistry
         .addSvgIcon('thumb-up',
             sanitizer.bypassSecurityTrustResourceUrl('/icon/assets/thumbup-icon.svg'))
+        .addSvgIcon('test1',
+            sanitizer.bypassSecurityTrustResourceUrl('/icon/assets/test1.svg'))
+        .addSvgIcon('test2',
+            sanitizer.bypassSecurityTrustResourceUrl('/icon/assets/test2.svg'))
         .addSvgIconSetInNamespace('core',
             sanitizer.bypassSecurityTrustResourceUrl('/icon/assets/core-icon-set.svg'))
         .registerFontClassAlias('fontawesome', 'fa');
   }
 }
+//
